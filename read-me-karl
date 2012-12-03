@@ -1,0 +1,39 @@
+**
+The purpose of this readme is to ensure that I've documented when I've updated the backups or made changes to the library. 
+
+Namaste, motherfucker.
+**
+
+=================
+November 23, 2012
+=================
+Geeking out on a rainy day after Thanksgiving. Creating statuscheck.rb to print out a count of the number of files of each type in each image directory. 
+
+Added statuscheck.rb. Purpose of this script is simply to list out the number of picture and video files in each directory for comparison at the end of a sync session:
+
+Year 	Pics 	Vids 
+2002	11	0
+2003	58	2
+2004	397	1
+2005	410	5
+2006	1330	2
+2007	1153	0
+2008	2362	23
+2009	2726	334
+2010	1632	30
+2011	827	39
+2012	4585	137
+
+
+At this point I am caught up with everything that is on my work MacBook. 
+
+================
+December 2, 2012
+================
+Guess what? It's raining again. It's Sunday, the Patriots beat the Dolphins, and the baby is sleeping. Time to make the donuts.
+
+Goals for today: 
+- Clean up extra pictures floating around random areas on the My Book
+- Extend script to create a hashmap of all unique images and check for duplicates. 
+- Add ability for script to accept command line arguments. 
+
