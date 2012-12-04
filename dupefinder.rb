@@ -1,5 +1,5 @@
 #!/usr/bin/ruby
-# Check for duplicate image and video files
+# Check for duplicate files
 
 require 'pathname'
 
@@ -47,7 +47,7 @@ files.each{ |file|
 
 print "Total Files Scanned: #{count}\n"
 print "Unique Files: #{filemap.size}\n"
-print "Duplicate Files: ", dupes.size, "\n"
+print "Duplicate Files: #{dupes.size}\n"
 
 outfile = "#{pwd}/duplicates.out"
 File.open(outfile,'w') { |output|
