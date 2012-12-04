@@ -13,7 +13,7 @@ filemap = Hash.new
 dupes = []
 filefinder = File.join("./","**","{.*,*}.{jpg,JPG,img,IMG,gif,GIF,mp4,MP4,mov,MOV,mpg,MPG,mpeg,MPEG}")
 files = Dir.glob(filefinder)
-puts "files.size after collecting files: ", files.size if debug
+print "files.size after collecting files: ", files.size, "\n" if debug
 
 files.each{ |file|
 	#http://developers.appoxy.com/2010/05/md5-hash-of-file-in-ruby.html
@@ -29,11 +29,11 @@ files.each{ |file|
 	
 }
 
-puts "filemap.size after processing: ", filemap.size if debug
-puts "dupes.size: ", dupes.size if debug
+print "filemap.size after processing: ", filemap.size, "\n" if debug
+print "dupes.size: ", dupes.size, "\n" if debug
 
 File.open('duplicates.out','w') { |output|
-	output.write(dupe.inspect)
+	output.write(dupes.inspect)
 }
 
-puts "Elapsed Time: ", (Time.now - starttime), " in seconds." if debug
+print "Elapsed Time: ", (Time.now - starttime), " in seconds.\n" if debug
