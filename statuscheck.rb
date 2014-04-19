@@ -1,6 +1,7 @@
 #!/usr/bin/ruby
 
-# Check the status of each of the photo directories and print out basic stats.
+# Check the status of each of the photo directories on the backup volume and print out basic stats. This assumes that the directories are named for the year in which the photo/movie was recorded.
+# run this from the root of the backup store
 
 # Define Statics
 debug = false
@@ -15,7 +16,7 @@ Dir.foreach(Dir.pwd) do |picdir|
 		
 		picdirstats = []
 		picdirstats.push picdir
-		jpgfinder = File.join("./",picdir,"**","{.*,*}.{jpg,JPG,img,IMG,gif,GIF}")
+		jpgfinder = File.join("./",picdir,"**","{.*,*}.{jpg,JPG,img,IMG,gif,GIF,png,PNG}")
 		vidfinder = File.join("./",picdir,"**","{.*,*}.{mp4,MP4,mov,MOV,mpg,MPG,mpeg,MPEG}")
 		
 		picdirstats.push Dir.glob(jpgfinder).size

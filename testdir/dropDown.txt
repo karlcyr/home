@@ -1,0 +1,462 @@
+<style>
+#nestedAccordion{
+	width: 100%;
+	font-family: Verdana, Geneva, sans-serif;
+}
+#nestedAccordion h2, #nestedAccordion h3, 
+#nestedAccordion div, #nestedAccordion ol, 
+#nestedAccordion li{
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	font-weight: normal;
+	list-style: circle;
+	font-family: Verdana, Geneva, sans-serif;
+}
+#nestedAccordion div{
+	display:none;
+	color:#555;
+	overflow:hidden;
+}
+#nestedAccordion h2{
+	cursor: pointer;
+	color: #fff;
+	font-size: 1.1em;
+	moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	padding: 5px;
+	margin-top: 1px;
+	background-color: #4CA1DB;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#4CA1DB), to(#447FE8));
+	background-image: -webkit-linear-gradient(top, #4CA1DB, #447FE8);
+	background-image: -moz-linear-gradient(top, #4CA1DB, #447FE8);
+	background-image: -ms-linear-gradient(top, #4CA1DB, #447FE8);
+	background-image: -o-linear-gradient(top, #4CA1DB, #447FE8);
+	background-image: linear-gradient(to bottom, #4CA1DB, #447FE8);
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+#nestedAccordion h2:hover{
+	cursor: pointer;
+	color: #fff;
+	font-size: 1.1em;
+	moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	padding: 5px;
+	margin-top: 1px;
+	background-color: #0d2e5e;
+	
+}
+#nestedAccordion h3{
+	cursor: pointer;
+	padding: 5px;
+	color: #666;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+	background-color: #f5f5f5;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#ededed));
+	background-image: -webkit-linear-gradient(top, #f5f5f5, #ededed);
+	background-image: -moz-linear-gradient(top, #f5f5f5, #ededed);
+	background-image: -ms-linear-gradient(top, #f5f5f5, #ededed);
+	background-image: -o-linear-gradient(top, #f5f5f5, #ededed);
+	background-image: linear-gradient(to bottom, #f5f5f5, #ededed);
+	font-family: Verdana, Geneva, sans-serif;
+}
+#nestedAccordion h3:hover{
+	color:#ffffff;
+	background-color: #b4453c;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#b4453c), to(#B40C0A));
+	background-image: -webkit-linear-gradient(top, #b4453c, #B40C0A);
+	background-image: -moz-linear-gradient(top, #b4453c, #B40C0A);
+	background-image: -ms-linear-gradient(top, #b4453c, #B40C0A);
+	background-image: -o-linear-gradient(top, #b4453c, #B40C0A);
+	background-image: linear-gradient(to bottom, #b4453c, #B40C0A);
+	font-family: Verdana, Geneva, sans-serif;
+}
+#nestedAccordion h3 + div{
+	background-color:#c3c3c3;
+	padding:5px 5px 5px 30px;
+}
+#nestedAccordion li:hover{
+	color:#000;
+	cursor:pointer;
+}
+#header3 {
+	text-align: center;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px; 
+	border-style:solid;
+	border-width:thin;
+	border-color:#B2B2B2; 
+}
+</style>
+
+<script>
+$j(document).ready(function() {
+	var parentDivs = $j('#nestedAccordion div'),
+	childDivs = $j('#nestedAccordion h3').siblings('div');
+	
+	$j('#nestedAccordion h2').click(function(){
+		parentDivs.slideUp();
+		if($j(this).next().is(':hidden')){
+			$j(this).next().slideDown();
+		}else{
+			$j(this).next().slideUp();
+		}
+	});
+	$j('#nestedAccordion h3').click(function(){
+		childDivs.slideUp();
+		if($j(this).next().is(':hidden')){
+			$j(this).next().slideDown();
+		}else{
+			$j(this).next().slideUp();
+		}
+	});
+});
+</script>
+<div id="header3">
+    <img src="http://www.tjamoroso.com/DUBG/backlot/images/corpTop.png" width="330" height="176" />
+    </div>
+<div id="nestedAccordion">
+<h2>Browse By Topic</h2>
+	<div>
+		<h3>Business Acumen</h3>
+		<div>
+			<ol>
+				<li><a href="https://enterpriseportal.disney.com/site/team/template.MAXIMIZE/menuitem.8bacaaa748106daf4727f59354276099/?javax.portlet.tpst=7798cd3fc3c482eb06ba6327b7653a33_ws_MX&javax.portlet.prp_7798cd3fc3c482eb06ba6327b7653a33_viewID=safeharborchk_process&app=elp&button=DeepLink&appredirURL=http%3A%2F%2Fdevelopmentconnection.disney.com%3A80%2Felms%2Flearner%2Fdeeplink.do%3FlinkId%3DONLINE_CONTENT_STRUCTURE%26componentID%3D16311%26componentTypeID%3DONLINE%26revisionDate%3D1233771218000" target="new"><strong> Leading During Challenging Times Recorded Webinar </strong> </a></li><br>
+                
+              	<li><a href="https://enterpriseportal.disney.com/site/team/template.MAXIMIZE/menuitem.8bacaaa748106daf4727f59354276099/?javax.portlet.tpst=7798cd3fc3c482eb06ba6327b7653a33_ws_MX&javax.portlet.prp_7798cd3fc3c482eb06ba6327b7653a33_viewID=safeharborchk_process&app=elp&button=DeepLink&appredirURL=http%3A%2F%2Fdevelopmentconnection.disney.com%3A80%2Felms%2Flearner%2Fdeeplink.do%3FlinkId%3DONLINE_CONTENT_STRUCTURE%26componentID%3D2606%26componentTypeID%3DONLINE%26revisionDate%3D1137703920000" target="new"><strong>Leading Effective Meetings (online)</strong></a></li><br>
+                
+               	<li><a href="https://enterpriseportal.disney.com/site/team/template.MAXIMIZE/menuitem.8bacaaa748106daf4727f59354276099/?javax.portlet.tpst=7798cd3fc3c482eb06ba6327b7653a33_ws_MX&javax.portlet.prp_7798cd3fc3c482eb06ba6327b7653a33_viewID=safeharborchk_process&app=elp&button=DeepLink&appredirURL=http%3A%2F%2Fdevelopmentconnection.disney.com%3A80%2Felms%2Flearner%2Fdeeplink.do%3FlinkId%3DITEM_DETAILS%26componentID%3D36990%26componentTypeID%3DCOURSE%26revisionDate%3D1341345549000" target="new"><strong>Project Management Survival Skills </strong></a></li><br>
+                
+                <li><a href="https://enterpriseportal.disney.com/site/team/template.MAXIMIZE/menuitem.8bacaaa748106daf4727f59354276099/?javax.portlet.tpst=7798cd3fc3c482eb06ba6327b7653a33_ws_MX&javax.portlet.prp_7798cd3fc3c482eb06ba6327b7653a33_viewID=safeharborchk_process&app=elp&button=DeepLink&appredirURL=http%3A%2F%2Fdevelopmentconnection.disney.com%3A80%2Felms%2Flearner%2Fdeeplink.do%3FlinkId%3DONLINE_CONTENT_STRUCTURE%26componentID%3D3254%26componentTypeID%3DONLINE%26revisionDate%3D1140217140000" target="new"><strong>Understanding the Basics of Finance</strong></a></li><br>
+                
+                <li><a href="http://www.fastcompany.com/1842766/succeed-business-lrn-2-right" target="new"><strong>Fast Company: To Succeed in Business, LRN2 Right:</strong></a></li><br>
+                
+               	<li><a href="http://www.businessweek.com/mediacenter/podcasts/cover_stories/covercast_01_08_09.htm" target="new"><strong>Managing Through a Crisis Audio:</strong></a></li><br>
+                
+                <li><a href="http://www.lynda.com/Business-Collaboration-tutorials/Effective-Meetings/81262-2.html" target="new"><strong>Effective Meetings</strong><em>(Lynda.com license required)</em></a></li><br>
+                
+               <li><a href="http://www.lynda.com/Business-Productivity-tutorials/Time-Management-Fundamentals/77533-2.html" target="new"><strong>Time Management Fundamentals</strong><em>(Lynda.com license required)</em></a></li><br>
+               
+               <li><a href="http://www.lynda.com/Business-Project-Management-tutorials/Project-Management-Fundamentals/80780-2.html" target="new"><strong>Project Management Fundamentals</strong><em>(Lynda.com license required)</em></a></li><br>
+               
+               <li><a href="http://www.lynda.com/Business-Business-Skills-training/Invaluable-Developing-Your-Business-Savvy/88538-2.html" target="new"><strong>Developing your Business Savvy </strong><em>(Lynda.com license required)</em></a></li><br>
+                
+			</ol>
+		</div>
+		<h3>Career Development</h3>
+		<div>
+			<ol>
+				<li><a href="http://access.hbsp.org/ssoEmail/?dst=/hmm/career_management/topic_landing.html&dm=disney" target="new"><strong>Career Management </strong></a></li><br>
+                
+                <li><a href="https://archive.harvardbusiness.org/cla/web/product_detail.seam?R=R1007Q-PDF-ENG&conversationId=31376" target="new"><strong>Job-Hopping to the Top and Other Career Fallacies Harvard Article </strong></a></li><br>
+                
+                <li><a href="http://www.forbes.com/sites/bonniemarcus/2011/10/27/choose-the-right-mentor-to-advance-your-career/" target="new"><strong>Forbes: Choose the Right Mentor to Advance Your Career</strong></a></li><br>
+                
+                <li><a href="http://www.businessweek.com/stories/2008-10-22/career-advancement-in-tough-times" target="new"><strong>Inc.: 9 Beliefs of Remarkably Succesful People</strong></a></li><br>
+                
+                <li><a href="http://www.books24x7.com/toc.aspx?bookid=20349" target="new"><strong>Career Distinction: Stand Out by Building Your Brand: William Arruda and Kirsten Dixson <em>(Books 24x7 license required)</em></strong></a></li><br>
+                
+                 <li><a href="http://www.lynda.com/Business-Business-Skills-tutorials/Managing-Your-Career/97579-2.html" target="new"><strong>Managing your Career: <em>(Lynda.com license required)</em></strong></a></li><br>
+                 
+                 <li><a href="http://www.lynda.com/Business-Skills-tutorials/Building-Your-Brand/101957-2.html?srchtrk=index%3A5%0Alinktypeid%3A2%0Aq%3Apresentation%20skills%0Apage%3A1%0As%3Arelevance%0Asa%3Atrue%0Aproducttypeid%3A2" target="new"><strong>Brand Buildling Basics:<em>(Lynda.com license required)</em></strong></a></li><br>
+                 
+                 <li><a href="http://www.lynda.com/Business-Business-Skills-tutorials/Achieving-Your-Goals/96757-2.html" target="new"><strong>Achieving your Goals<em>(Lynda.com license required)</em></strong></a></li><br>
+                 
+                 <li><a href="http://www.lynda.com/Business-tutorials/Invaluable-Unlocking-Your-Abilities/88023-2.html" target="new"><strong>Unlocking your Abilities<em>(Lynda.com license required)</em></strong></a></li><br>
+                 
+			</ol>
+		</div>
+		<h3>Communication</h3>
+		<div>
+			<ol>
+				<li><a href="http://access.hbsp.org/ssoEmail/?dst=/hmm/persuading_others/topic_landing.html&dm=disney" target="new"><strong>Persuading Others</strong></a></li><br>
+                
+                <li><a href="http://access.hbsp.org/ssoEmail/?dst=/hmm/difficult_interactions/topic_landing.html&dm=disney" target="new"><strong>Difficult Interactions </strong></a></li><br>
+                
+                <li><a href="https://enterpriseportal.disney.com/site/team/template.MAXIMIZE/menuitem.8bacaaa748106daf4727f59354276099/?javax.portlet.tpst=7798cd3fc3c482eb06ba6327b7653a33_ws_MX&javax.portlet.prp_7798cd3fc3c482eb06ba6327b7653a33_viewID=safeharborchk_process&app=elp&button=DeepLink&appredirURL=http%3A%2F%2Fdevelopmentconnection.disney.com%3A80%2Felms%2Flearner%2Fdeeplink.do%3FlinkId%3DADVANCED_SEARCH_WITH_CRITERIA%26searchOption%3Ditems%26itemTitle%3Dcommunicating%2Bwith%2Bstyle%26itemTitleOption%3DCONTAINS%26description%3D%26descriptionOption%3DCONTAINS%26deliveryMethod%3D%26deliveryMethodOption%3DCONTAINS%26source%3D%26sourceOption%3DCONTAINS%26itemID%3D%26itemIDOption%3DCONTAINS%26subjectArea%3D%26subjectAreaOption%3DCONTAINS%26instructorLed%3D%26online%3Dnull%26other%3Dnull%26facility%3D%26facilityOption%3DCONTAINS%26fromDate%3D%26fromDateMilliseconds%3D%26toDate%3D%26toDateMilliseconds%3D" target="new"><strong>Communicating with Style </strong></a></li><br>
+                
+                <li><a href="https://enterpriseportal.disney.com/site/team/template.MAXIMIZE/menuitem.8bacaaa748106daf4727f59354276099/?javax.portlet.tpst=7798cd3fc3c482eb06ba6327b7653a33_ws_MX&javax.portlet.prp_7798cd3fc3c482eb06ba6327b7653a33_viewID=safeharborchk_process&app=elp&button=DeepLink&appredirURL=http%3A%2F%2Fdevelopmentconnection.disney.com%3A80%2Felms%2Flearner%2Fdeeplink.do%3FlinkId%3DITEM_DETAILS%26componentID%3D7086%26componentTypeID%3DCOURSE%26revisionDate%3D1166057782000" target="new"><strong>Navigating through Conflict</strong></a></li><br>
+                
+                <li><a href="https://enterpriseportal.disney.com/site/team/template.MAXIMIZE/menuitem.8bacaaa748106daf4727f59354276099/?javax.portlet.tpst=7798cd3fc3c482eb06ba6327b7653a33_ws_MX&javax.portlet.prp_7798cd3fc3c482eb06ba6327b7653a33_viewID=safeharborchk_process&app=elp&button=DeepLink&appredirURL=http%3A%2F%2Fdevelopmentconnection.disney.com%3A80%2Felms%2Flearner%2Fdeeplink.do%3FlinkId%3DITEM_DETAILS%26componentID%3D30215%26componentTypeID%3DONLINE%26revisionDate%3D1305664080000" target="new"><strong>Motivation Conversation Recorded Webina</strong></a></li><br>
+                
+                <li><a href="http://www.books24x7.com/toc.aspx?bookid=32984" target="new"><strong>Mastering Communication at Work: How to Lead, Manage, and Influence<em>(Books 24x7 license required)</em></strong></a></li><br>
+                
+                <li><a href="http://www.books24x7.com/searchresults.aspx#&&searchname=114&assetsearch=true&assetbin=2&assetbinsize=10" target="new"><strong>Bridging the Culture Gap: A Practical Guide to International Business Relations<em>(Books 24x7 license required)</em></strong></a></li><br>
+                
+                <li><a href="http://itunes.apple.com/us/itunes-u/what-not-to-say-at-work/id380130790?i=118476006" target="new"><strong>iTunes What Great Bosses Know: What NOT to say at Work:</strong></a></li><br>
+                
+                <li><a href=" http://itunes.apple.com/us/course/stanley-mcchrystals-listen/id512987525?i=112057865&mt=2" target="new"><strong>TedTalk: Kathryn Schultz on Being Wrong</strong></a></li><br>
+                
+                 <li><a href="http://www.inc.com/articles/2000/08/20000.html" target="new"><strong>Inc Article: A Crsh Course in Communication: </strong></a></li><br>
+                 
+                 <li><a href= "http://www.inc.com/articles/2001/09/23385.html" target="new"><strong>Inc Article: Powerful Questions Can Have Powerful Effect:</strong></a></li><br>
+                 
+                 <li><a href= "http://www.fastcompany.com/1350287/communicating-your-employees" target="new"><strong>Fast Company Article: Communicating with your Employees:</strong></a></li><br>
+                 
+                 <li><a href= "http://www.success.com/articles/150-communicate-authentically-with-others" target="new"><strong>Success Article: Communicate Authentically with Others</strong></a></li><br>
+                 
+                 <li><a href= "https://archive.harvardbusiness.org/cla/web/product_detail.seam?R=U9807D-PDF-ENG&conversationId=32242" target="new"><strong>Yo, Listen Up: A Brief Hearing on the Most Neglected Communication Skill </strong></a></li><br>
+                 
+                  <li><a href= "https://archive.harvardbusiness.org/cla/web/he/product_view.seam?R=C0301D-PDF-ENG&T=CCM&C=SEARCH&CS=53123188d8d0e4c4ceef6afb7b5c0091" target="new"><strong>Don't Let Stress Strain Communication </strong></a></li><br>
+                
+			</ol>
+		</div>
+		<h3>Creativity & Innovation</h3>
+		<div>
+			<ol>
+				<li><a href="http://access.hbsp.org/ssoEmail/?dst=/hmm/innovation_and_creativity/topic_landing.html&dm=disney" target="new"><strong>Innovation and Creativity </strong></a></li><br>
+                
+                <li><a href="http://access.hbsp.org/ssoEmail/?dst=/hmm/innovation_implementation/topic_landing.html&dm=disney" target="new"><strong>Implementing Innovation</strong></a></li><br>
+                
+                 <li><a href="https://archive.harvardbusiness.org/cla/web/he/product_view.seam?R=R0507L-PDF-ENG&T=CCM&C=SEARCH&CS=2afc37ba677ad51d5e48315e346a88c9" target="new"><strong>Managing Creativity: Harvard Article </strong></a></li><br>
+                 
+                 <li><a href="http://www.inc.com/video/2011/success-stories-warby-parker.html" target="new"><strong>Inc.: Warby Parker Disrupts the Eyewear Industry (<em>Video</em>) </strong></a></li><br>
+                 
+                 <li><a href="http://itunes.apple.com/us/course/stanley-mcchrystals-listen/id512987525?i=112057865&mt=2" target="new"><strong>TedTalk: Creative Problem Solving: </strong></a></li><br>
+                 
+                 <li><a href="http://itunes.apple.com/us/podcast/109-pixar-collective-creativity/id392348547?i=87190238&mt=2" target="new"><strong>How Pixar Fosters Creativity Podcast: </strong></a></li><br>
+                 
+                 <li><a href="http://itunes.apple.com/us/podcast/understanding-creative-savants/id290951725?i=119879057&mt=2" target="new"><strong>Understanding Creative Savants:</strong></a></li><br>
+                 
+                 <li><a href="http://itunes.apple.com/us/podcast/creativity-top-5-episode-182/id274092020?i=117654493&mt=2" target="new"><strong>Video: Creativity Top 5 Ads 2012:</strong></a></li><br>
+                 
+                 <li><a href="http://itunes.apple.com/us/podcast/innovation-through-design/id382421084?i=84846725&mt=2" target="new"><strong>Video: Innovation through Design Thinking</strong></a></li><br>
+                 
+                 <li><a href="http://itunes.apple.com/us/podcast/stimulating-innovation-creativity/id384233886?i=85093063&mt=2" target="new"><strong>Bob Sutton - Stimulating Innovation and Creativity in the Workplace Podcast: </strong></a></li><br>
+                 
+                 <li><a href="http://www.books24x7.com/toc.aspx?bookid=32547" target="new"><strong>The Innovation Zone: How Great Companies Re-Innovate for Amazing Success </strong>Thomas Koulopoulos<em>(Books 24x7 license required)</em></a></li><br>
+                 
+                 <li><a href="http://www.books24x7.com/toc.aspx?bookid=36284" target="new"><strong>Design Driven Innovation: Changing the Rules of Competition by Radically Innovating What Things Mean </strong>Roberto Verganti<em>(Books 24x7 license required)</em></a></li><br>
+                
+                
+			</ol>
+		</div>
+        
+        <h3>Functional/Technical</h3>
+		<div>
+			<ol>
+				<li><a href="https://enterpriseportal.disney.com/site/team/template.MAXIMIZE/menuitem.8bacaaa748106daf4727f59354276099/?javax.portlet.tpst=7798cd3fc3c482eb06ba6327b7653a33_ws_MX&javax.portlet.prp_7798cd3fc3c482eb06ba6327b7653a33_viewID=safeharborchk_process&app=elp&button=DeepLink&appredirURL=http%3A%2F%2Fdevelopmentconnection.disney.com%3A80%2Felms%2Flearner%2Fdeeplink.do%3FlinkId%3DADVANCED_SEARCH_WITH_CRITERIA%26searchOption%3Dofferings%26itemTitle%3DTWDC_Excel%26itemTitleOption%3DCONTAINS%26description%3D%26descriptionOption%3DCONTAINS%26deliveryMethod%3D%26deliveryMethodOption%3DCONTAINS%26source%3D%26sourceOption%3DCONTAINS%26itemID%3D%26itemIDOption%3DCONTAINS%26subjectArea%3D%26subjectAreaOption%3DCONTAINS%26instructorLed%3D%26online%3Dnull%26other%3Dnull%26facility%3D%26facilityOption%3DCONTAINS%26fromDate%3D%26fromDateMilliseconds%3D%26toDate%3D%26toDateMilliseconds%3D" target="new"><strong>Excel</strong> (DDC - ILT)</a></li><br>
+                
+                <li><a href="http://www.lynda.com/Business-tutorials/Invaluable-Unlocking-Your-Abilities/88023-2.html" target="new"><strong>EXCEL </strong><em>(Lynda.com license required)</em></a></li><br>
+                
+                <li><a href=" http://www.lynda.com/Word-training-tutorials/326-0.html" target="new"><strong>Word</strong><em>(Lynda.com license required)</em></a></li><br>
+                
+                <li><a href="https://enterpriseportal.disney.com/site/team/template.MAXIMIZE/menuitem.8bacaaa748106daf4727f59354276099/?javax.portlet.tpst=7798cd3fc3c482eb06ba6327b7653a33_ws_MX&javax.portlet.prp_7798cd3fc3c482eb06ba6327b7653a33_viewID=safeharborchk_process&app=elp&button=DeepLink&appredirURL=http%3A%2F%2Fdevelopmentconnection.disney.com%3A80%2Felms%2Flearner%2Fdeeplink.do%3FlinkId%3DADVANCED_SEARCH_WITH_CRITERIA%26searchOption%3Dofferings%26itemTitle%3DTWDC_Project%26itemTitleOption%3DCONTAINS%26description%3D%26descriptionOption%3DCONTAINS%26deliveryMethod%3D%26deliveryMethodOption%3DCONTAINS%26source%3D%26sourceOption%3DCONTAINS%26itemID%3D%26itemIDOption%3DCONTAINS%26subjectArea%3D%26subjectAreaOption%3DCONTAINS%26instructorLed%3D%26online%3Dnull%26other%3Dnull%26facility%3D%26facilityOption%3DCONTAINS%26fromDate%3D%26fromDateMilliseconds%3D%26toDate%3D%26toDateMilliseconds%3D" target="new"><strong>Project</strong> (DDC - ILT)</a></li><br>
+                
+                <li><a href="http://www.lynda.com/Project-training-tutorials/291-0.html" target="new"><strong>Project</strong><em>(Lynda.com license required)</em></a></li><br>
+                
+                
+                <li><a href="https://enterpriseportal.disney.com/site/team/template.MAXIMIZE/menuitem.8bacaaa748106daf4727f59354276099/?javax.portlet.tpst=7798cd3fc3c482eb06ba6327b7653a33_ws_MX&javax.portlet.prp_7798cd3fc3c482eb06ba6327b7653a33_viewID=safeharborchk_process&app=elp&button=DeepLink&appredirURL=http%3A%2F%2Fdevelopmentconnection.disney.com%3A80%2Felms%2Flearner%2Fdeeplink.do%3FlinkId%3DADVANCED_SEARCH_WITH_CRITERIA%26searchOption%3Dofferings%26itemTitle%3DTWDC_Access%26itemTitleOption%3DCONTAINS%26description%3D%26descriptionOption%3DCONTAINS%26deliveryMethod%3D%26deliveryMethodOption%3DCONTAINS%26source%3D%26sourceOption%3DCONTAINS%26itemID%3D%26itemIDOption%3DCONTAINS%26subjectArea%3D%26subjectAreaOption%3DCONTAINS%26instructorLed%3D%26online%3Dnull%26other%3Dnull%26facility%3D%26facilityOption%3DCONTAINS%26fromDate%3D%26fromDateMilliseconds%3D%26toDate%3D%26toDateMilliseconds%3D" target="new"><strong>Access</strong> (DDC - ILT)</a></li><br>
+                
+                <li><a href="http://www.lynda.com/Access-training-tutorials/140-0.html" target="new"><strong>Access</strong><em>(Lynda.com license required)</em></a></li><br>
+                
+                  <li><a href="https://enterpriseportal.disney.com/site/team/template.MAXIMIZE/menuitem.8bacaaa748106daf4727f59354276099/?javax.portlet.tpst=7798cd3fc3c482eb06ba6327b7653a33_ws_MX&javax.portlet.prp_7798cd3fc3c482eb06ba6327b7653a33_viewID=safeharborchk_process&app=elp&button=DeepLink&appredirURL=http%3A%2F%2Fdevelopmentconnection.disney.com%3A80%2Felms%2Flearner%2Fdeeplink.do%3FlinkId%3DADVANCED_SEARCH_WITH_CRITERIA%26searchOption%3Dofferings%26itemTitle%3DTWDC_Apple%26itemTitleOption%3DCONTAINS%26description%3D%26descriptionOption%3DCONTAINS%26deliveryMethod%3D%26deliveryMethodOption%3DCONTAINS%26source%3D%26sourceOption%3DCONTAINS%26itemID%3D%26itemIDOption%3DCONTAINS%26subjectArea%3D%26subjectAreaOption%3DCONTAINS%26instructorLed%3D%26online%3Dnull%26other%3Dnull%26facility%3D%26facilityOption%3DCONTAINS%26fromDate%3D%26fromDateMilliseconds%3D%26toDate%3D%26toDateMilliseconds%3D" target="new"><strong>Keynote</strong> (DDC - ILT)</a></li><br>
+                  
+                  <li><a href="http://www.lynda.com/Keynote-training-tutorials/247-0.html" target="new"><strong>Keynote</strong><em>(Lynda.com license required)</em></a></li><br>
+                  
+                  <li><a href=" http://www.lynda.com/Pages-training-tutorials/272-0.html" target="new"><strong>Pages</strong><em>(Lynda.com license required)</em></a></li><br>
+                  
+                  <li><a href=" http://www.lynda.com/Numbers-training-tutorials/262-0.html" target="new"><strong>Numbers</strong><em>(Lynda.com license required)</em></a></li><br>
+                  
+                  <li><a href="https://enterpriseportal.disney.com/site/team/template.MAXIMIZE/menuitem.8bacaaa748106daf4727f59354276099/?javax.portlet.tpst=7798cd3fc3c482eb06ba6327b7653a33_ws_MX&javax.portlet.prp_7798cd3fc3c482eb06ba6327b7653a33_viewID=safeharborchk_process&app=elp&button=DeepLink&appredirURL=http%3A%2F%2Fdevelopmentconnection.disney.com%3A80%2Felms%2Flearner%2Fdeeplink.do%3FlinkId%3DADVANCED_SEARCH_WITH_CRITERIA%26searchOption%3Ditems%26itemTitle%3DADOBE%26itemTitleOption%3DCONTAINS%26description%3D%26descriptionOption%3DCONTAINS%26deliveryMethod%3D%26deliveryMethodOption%3DCONTAINS%26source%3D%26sourceOption%3DCONTAINS%26itemID%3D%26itemIDOption%3DCONTAINS%26subjectArea%3D%26subjectAreaOption%3DCONTAINS%26instructorLed%3D%26online%3Dtrue%26other%3Dnull%26facility%3D%26facilityOption%3DCONTAINS%26fromDate%3D%26fromDateMilliseconds%3D%26toDate%3D%26toDateMilliseconds%3D" target="new"><strong>Adobe Software Suite</strong> (DDC - Online)</a></li><br>
+                  
+                  <li><a href="https://enterpriseportal.disney.com/site/team/template.MAXIMIZE/menuitem.8bacaaa748106daf4727f59354276099/?javax.portlet.tpst=7798cd3fc3c482eb06ba6327b7653a33_ws_MX&javax.portlet.prp_7798cd3fc3c482eb06ba6327b7653a33_viewID=safeharborchk_process&app=elp&button=DeepLink&appredirURL=http%3A%2F%2Fdevelopmentconnection.disney.com%3A80%2Felms%2Flearner%2Fdeeplink.do%3FlinkId%3DADVANCED_SEARCH_WITH_CRITERIA%26searchOption%3Dofferings%26itemTitle%3DTWDC_Adobe%26itemTitleOption%3DCONTAINS%26description%3D%26descriptionOption%3DCONTAINS%26deliveryMethod%3D%26deliveryMethodOption%3DCONTAINS%26source%3D%26sourceOption%3DCONTAINS%26itemID%3D%26itemIDOption%3DCONTAINS%26subjectArea%3D%26subjectAreaOption%3DCONTAINS%26instructorLed%3D%26online%3Dnull%26other%3Dnull%26facility%3D%26facilityOption%3DCONTAINS%26fromDate%3D%26fromDateMilliseconds%3D%26toDate%3D%26toDateMilliseconds%3Dility%3D%26facilityOption%3DCONTAINS%26fromDate%3D%26fromDateMilliseconds%3D%26toDate%3D%26toDateMilliseconds%3D" target="new"><strong>Adobe Software Suite</strong> (DDC - ILT)</a></li><br>
+                  
+                  <li><a href="http://www.lynda.com/Adobe-training-tutorials/105-0.html" target="new"><strong>Adobe Software Suite</strong><em>(Lynda.com license required)</em></a></li><br>
+                  
+                  <li><a href="http://www.lynda.com/Keynote-tutorials/effective-presentations-2006/192-2.html?srchtrk=index%3A1%0Alinktypeid%3A2%0Aq%3Aeffective%20presentations%0Apage%3A1%0As%3Arelevance%0Asa%3Atrue%0Aproducttypeid%3A2" target="new"><strong>Effective Presentations in PowerPoint:</strong><em>(Lynda.com license required)</em></a></li><br>
+                  
+                  <li><a href="http://www.fastcompany.com/3000619/what-successful-people-do-first-hour-their-work-day" target="new"><strong>Fast Company Article: What Successful People Do with Their First Hour of Their Work Day:</strong></a></li><br>
+                  
+                   <li><a href="http://www.fastcompany.com/3000676/why-too-much-data-disables-your-decision-making" target="new"><strong>Fast Company Article: Why Too Much Data Disables Your Decision Making:</strong></a></li><br>
+                  
+                  
+                
+			</ol>
+		</div>
+        
+        <h3>Leadership & Management</h3>
+		<div>
+			<ol>
+				<li><a href="http://access.hbsp.org/ssoEmail/?dst=/hmm/leading_and_motivating/topic_landing.html&dm=disney" target="new"><strong>Leading and Motivating</strong></a></li><br>
+                
+                <li><a href="http://access.hbsp.org/ssoEmail/?dst=/hmm/team_leadership/topic_landing.html&dm=disney" target="new"><strong>Team Leadership </strong></a></li><br>
+                
+                <li><a href=" http://access.hbsp.org/ssoEmail/?dst=/hmm/strategic_thinking/topic_landing.html&dm=disney" target="new"><strong>Strategic Thinking</strong></a></li><br>
+                
+                <li><a href=" http://access.hbsp.org/ssoEmail/?dst=/hmm/strategy_execution/topic_landing.html&dm=disney" target="new"><strong>Strategic Execution </strong></a></li><br>
+                
+                 <li><a href="https://enterpriseportal.disney.com/site/team/template.MAXIMIZE/menuitem.8bacaaa748106daf4727f59354276099/?javax.portlet.tpst=7798cd3fc3c482eb06ba6327b7653a33_ws_MX&javax.portlet.prp_7798cd3fc3c482eb06ba6327b7653a33_viewID=safeharborchk_process&app=elp&button=DeepLink&appredirURL=http%3A%2F%2Fdevelopmentconnection.disney.com%3A80%2Felms%2Flearner%2Fdeeplink.do%3FlinkId%3DADVANCED_SEARCH_WITH_CRITERIA%26searchOption%3Ditems%26itemTitle%3Dtransition%2Bto%2Bmanagement%26itemTitleOption%3DCONTAINS%26description%3D%26descriptionOption%3DCONTAINS%26deliveryMethod%3D%26deliveryMethodOption%3DCONTAINS%26source%3D%26sourceOption%3DCONTAINS%26itemID%3D%26itemIDOption%3DCONTAINS%26subjectArea%3D%26subjectAreaOption%3DCONTAINS%26instructorLed%3D%26online%3Dtrue%26other%3Dnull%26facility%3D%26facilityOption%3DCONTAINS%26fromDate%3D%26fromDateMilliseconds%3D%26toDate%3D%26toDateMilliseconds%3D" target="new"><strong>Transition to Management</strong> (Online)</a></li><br>
+                 
+                 <li><a href="https://enterpriseportal.disney.com/site/team/template.MAXIMIZE/menuitem.8bacaaa748106daf4727f59354276099/?javax.portlet.tpst=7798cd3fc3c482eb06ba6327b7653a33_ws_MX&javax.portlet.prp_7798cd3fc3c482eb06ba6327b7653a33_viewID=safeharborchk_process&app=elp&button=DeepLink&appredirURL=http%3A%2F%2Fdevelopmentconnection.disney.com%3A80%2Felms%2Flearner%2Fdeeplink.do%3FlinkId%3DAVAILABLE_SCHEDULED_OFFERINGS%26componentID%3D30573%26componentTypeID%3DCOURSE%26revisionDate%3D1307506772000" target="new"><strong>Management Journey</strong> (Corporate Version)</a></li><br>
+                 
+                  <li><a href="https://enterpriseportal.disney.com/site/team/template.MAXIMIZE/menuitem.8bacaaa748106daf4727f59354276099/?javax.portlet.tpst=7798cd3fc3c482eb06ba6327b7653a33_ws_MX&javax.portlet.prp_7798cd3fc3c482eb06ba6327b7653a33_viewID=safeharborchk_process&app=elp&button=DeepLink&appredirURL=http%3A%2F%2Fdevelopmentconnection.disney.com%3A80%2Felms%2Flearner%2Fdeeplink.do%3FlinkId%3DITEM_DETAILS%26componentID%3D19137%26componentTypeID%3DCOURSE%26revisionDate%3D1251785778000" target="new"><strong>Executive Communication </strong> (Corporate Version)</a></li><br>
+                  
+                  <li><a href=" http://www.books24x7.com/toc.aspx?bookid=22791" target="new"><strong>Remarkable Leadership: Unleashing Your Leadership Potential One Skill at a Time</strong> Kevin Eikenberry<em>(Books 24x7 license required)</em></a></li><br>
+                  
+                   <li><a href="http://www.inc.com/chris-beier-and-daniel-wolfman/serial-entrepreneurs-what-they-cant-resist.html" target="new"><strong>Inc.: What a Seriel Entrepreneur Can't Resist</strong> (Video)</a></li><br>
+                   
+                   <li><a href="http://itunes.apple.com/us/course/itay-talgam-lead-like-great/id512987525?i=112057859&mt=2" target="new"><strong>TedTalk: Lead Like Great Conductors: </strong></a></li><br>
+                   
+                        <li><a href="http://itunes.apple.com/us/itunes-u/ten-powers-of-leadership/id380130790?i=119174472" target="new"><strong>iTunes What Great Bosses Know: Ten Powers of Leadership:</strong></a></li><br>
+                        
+                         <li><a href="http://itunes.apple.com/us/course/simon-sinek-how-great-leaders/id512987525?i=112057860&mt=2" target="new"><strong>TedTalk: How Great Leaders Inspire Action: </strong></a></li><br>
+                         
+                         <li><a href="http://itunes.apple.com/us/course/stanley-mcchrystals-listen/id512987525?i=112057865&mt=2" target="new"><strong>TedTalk: Listen, Learn, then Lead: </strong></a></li><br>
+                         
+                         <li><a href="http://www.youtube.com/watch?v=PxU6Z0BgyWM&feature=related" target="new"><strong>Create Candor in the Workplace: </strong></a></li><br>
+                         
+                         <li><a href="https://archive.harvardbusiness.org/cla/web/he/product_view.seam?R=R0702H-PDF-ENG&T=CCM&C=SEARCH&CS=d7ead716f6579180a8aa69ccb2d3d287" target="new"><strong>Discover Your Authentic Leadership: </strong></a></li><br>
+                         
+                         <li><a href="https://archive.harvardbusiness.org/cla/web/he/product_view.seam?R=R1206D-PDF-ENG&T=CCM&C=SEARCH&CS=ca5d1f6153c580cbdb4c8f6adf2b53c8" target="new"><strong>Leadership is a Conversation:</strong></a></li><br>
+                
+			</ol>
+		</div>
+	</div>
+<h2>Browse by TWDC Competency</h2>
+	<div>
+		<h3>Champions Change</h3>
+		<div>
+			<ol>
+				<li>Coming Soon</li>
+			</ol>
+		</div>
+		<h3>Collaborates & Partners</h3>
+		<div>
+			<ol>
+				<li>Coming Soon</li>
+			</ol>
+		</div>
+		<h3>Communicates Effectively</h3>
+		<div>
+			<ol>
+				<li>Coming Soon</li>
+				
+			</ol>
+		</div>
+		<h3>Develops Talent</h3>
+		<div>
+			<ol>
+				<li>Coming Soon</li>
+			</ol>
+		</div>
+		<h3>Drives Results</h3>
+		<div>
+			<ol>
+				<li>Coming Soon</li>
+			</ol>
+		</div>
+        <h3>Exibits Professional Excellence</h3>
+		<div>
+			<ol>
+				<li>Coming Soon</li>
+			</ol>
+		</div>
+        <h3>Fosters Creativity & Innovation</h3>
+		<div>
+			<ol>
+				<li>Coming Soon</li>
+			</ol>
+		</div>
+        <h3>Strategic Visioning</h3>
+		<div>
+			<ol>
+				<li>Coming Soon</li>
+			</ol>
+		</div>
+	</div>
+    
+    <h2>Browse Corporate Learning Calendar</h2>
+	<div>
+		<h3>September 2012</h3>
+		<div>
+			<ol>
+				 <li><a href="https://backlot.disney.com/events/4193" target="new">September 18, 2012<strong>Excel 2007 Level 1</strong></a></li><br>
+                 
+                 <li><a href="https://backlot.disney.com/events/4192" target="new">September 18, 2012<strong>Communicating with Style</strong></a></li><br>
+                 
+                 <li><a href="https://backlot.disney.com/events/5711" target="new">September 19, 2012<strong>Influencing without Authority</strong></a></li><br>
+                 
+                 <li><a href="https://backlot.disney.com/events/5714" target="new">September 19, 2012<strong>Collaborating Across All Lines</strong></a></li><br>
+                 
+                 <li><a href="https://backlot.disney.com/events/5715" target="new">September 24, 2012<strong>Project Management Survival Skills</strong></a></li><br>
+                 
+                 <li><a href="https://backlot.disney.com/events/4194" target="new">September 24, 2012<strong>Project 2007 Level 2</strong></a></li><br>
+                 
+                 
+			</ol>
+		</div>
+		<h3>October 2012</h3>
+		<div>
+			<ol>
+				<li><a href="https://backlot.disney.com/events/4195" target="new">October 8, 2012<strong>Access 2007 Level 1</strong></a></li><br>
+                
+                <li><a href="https://backlot.disney.com/events/5720" target="new">October 8, 2012<strong>Coaching Leaders for Results (Session #1 - Virtual Classroom)</strong></a></li><br>
+                
+                <li><a href="https://backlot.disney.com/events/5723" target="new">October 8, 2012<strong>Coaching Employees for Results (Session #1 - Virtual Classroom)</strong></a></li><br>
+                
+                <li><a href="https://backlot.disney.com/events/5721" target="new">October 9, 2012<strong>Coaching Leaders for Results (Session #2)</strong></a></li><br>
+                
+                <li><a href="https://backlot.disney.com/events/5724" target="new">October 10, 2012<strong>Coaching Employees for Results (Session #2)</strong></a></li><br>
+                
+                 <li><a href="https://backlot.disney.com/events/4197" target="new">October 11, 2012<strong>Excel 2007 Intro to Formulas</strong></a></li><br>
+                 
+                 <li><a href="https://backlot.disney.com/events/4198" target="new">October 11, 2012<strong>Excel 2007 Pivot Tables and Pivot Charts</strong></a></li><br>
+                 
+                  <li><a href="https://backlot.disney.com/events/5718" target="new">October 12, 2012<strong>Individual's Guide to Growth and Development</strong></a></li><br>
+                  
+                  <li><a href="https://backlot.disney.com/events/5716" target="new">October 12, 2012<strong>Manager's Guide to Growth and Development</strong></a></li><br>
+                  
+                  <li><a href="https://backlot.disney.com/events/4196" target="new">October 15, 2012<strong>Excel 2007 Level 3</strong></a></li><br>
+                  
+                  <li><a href="https://backlot.disney.com/events/4199" target="new">October 16, 2012<strong>Adobe Illustrator CS5</strong></a></li><br>
+                  
+                  <li><a href="https://backlot.disney.com/events/5727" target="new">October 18, 2012<strong>Navigating through Conflict</strong></a></li><br>
+                  
+                  <li><a href="https://backlot.disney.com/events/5729" target="new">October 23, 2012<strong>Sustaining High Performance Through Change</strong></a></li><br>
+                  
+                  <li><a href="https://backlot.disney.com/events/5730" target="new">October 23, 2012<strong>Setting and Driving Strategy</strong></a></li><br>
+                  
+                  <li><a href="https://backlot.disney.com/events/5725" target="new">October 24, 2012<strong>Coaching Employees for Results (Session #3)</strong></a></li><br>
+                  
+                  <li><a href="https://backlot.disney.com/events/5731" target="new">October 31, 2012<strong>Management Journey (Session #1)</strong></a></li><br>
+             
+			</ol>
+		</div>
+		<h3>November 2012</h3>
+		<div>
+			<ol>
+				<li><a href="https://backlot.disney.com/events/5722" target="new">November 05, 2012<strong>Coaching Leaders for Results (Session #3 - Virtual Classroom)</strong></a></li><br>
+                
+                <li><a href="https://backlot.disney.com/events/5726" target="new">November 05, 2012<strong>Coaching Employees for Results (Session #4 - Virtual Classroom)</strong></a></li><br>
+                
+                <li><a href="https://backlot.disney.com/events/4200" target="new">November 06, 2012<strong>PowerPoint 2007 Level 1</strong></a></li><br>
+                
+                 <li><a href="https://backlot.disney.com/events/5732" target="new">November 07, 2012<strong>Management Journey (Session #2)</strong></a></li><br>
+                 
+                  <li><a href="https://backlot.disney.com/events/4217" target="new">November 07, 2012<strong>Excel 2007 Level 2</strong></a></li><br>
+                  
+                   <li><a href="https://backlot.disney.com/events/4201" target="new">November 08, 2012<strong>Excel 2007 Level 2</strong></a></li><br>
+                   
+                   <li><a href="https://backlot.disney.com/events/5734" target="new">November 13, 2012<strong>Communicating with Style</strong></a></li><br>
+                   
+                   <li><a href="https://backlot.disney.com/events/5733" target="new">November 14, 2012<strong>Management Journey (Session #3)</strong></a></li><br>
+                   
+                   <li><a href="https://backlot.disney.com/events/5728" target="new">November 28, 2012<strong>Navigating through Conflict</strong></a></li><br>
+                
+			</ol>
+		</div>
+		<h3>December 2012</h3>
+		<div>
+			<ol>
+				<li><a href="https://backlot.disney.com/events/4202" target="new">December 04, 2012<strong>PowerPoint 2007 Level 2</strong></a></li><br>
+                
+                <li><a href="https://backlot.disney.com/events/5735" target="new">December 11, 2012<strong>Communicating with Style</strong></a></li><br>
+			</ol>
+		</div>
+		
+	</div>
+</div>

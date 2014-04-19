@@ -37,3 +37,94 @@ Goals for today:
 - Extend script to create a hashmap of all unique images and check for duplicates. 
 - Add ability for script to accept command line arguments. 
 
+=============
+March 4, 2013
+=============
+Getting ready to move, making sure I have photos and music backed up. 
+
+Added a bunch of photos from 2007 (wedding) and caught up on the rest of 2012 (and a little bit of 2013). 
+
+Year    Pics    Vids 
+2002    12      0   
+2003    58      2   
+2004    397     1   
+2005    410     5   
+2006    1338    2   
+2007    1697    0   
+2008    2864    19  
+2009    3012    341 
+2010    1633    134 
+2011    828     201 
+2012    6001    203 
+
+===============
+August 26, 2013
+===============
+Settled in N. Yarmouth! Checking this out to make sure everything from this year is backed up.
+
+Just created the '2013' directory and moved all 2013 content out of the 2012 directory. Now it looks like this:
+
+Year    Pics    Vids
+2002    12      0
+2003    58      2
+2004    397     1
+2005    410     5
+2006    1338    2
+2007    1697    0
+2008    2864    19
+2009    3012    341
+2010    1633    134
+2011    828     201
+2012    5117    193
+2013    884     10
+
+Next, will back up new images. I added all of Betsy's phone pictures this year so we're probably going to have a lot of new ones!
+
+
+================
+November 9, 2013
+================
+Been working on iphotobackup.rb. About to pull the trigger on my first copy attempt. Here's the stats before the copy:
+
+Year 	Pics 	Vids 
+2002	12	0
+2003	58	2
+2004	397	1
+2005	410	5
+2006	1338	2
+2007	1697	0
+2008	2864	19
+2009	3012	341
+2010	1633	134
+2011	828	201
+2012	5117	193
+2013	2740	206
+
+I am expecting that there will be some dupes because my manual practice of copying files seems to have included some 2012 files in the 2013 folder. If I've executed the iphotobackup.rb correctly it should move the 2012 photos to their proper directory. 
+
+Godspeed, little ruby!
+
+Year 	Pics 	Vids 
+2002	12	0
+2003	58	2
+2004	397	1
+2005	410	5
+2006	1338	2
+2007	1697	0
+2008	2864	19
+2009	3012	341
+2010	1638	134
+2011	1090	239
+2012	5709	296
+2013	3623	221
+
+Total files scanned: 4803
+Total files copied: 1898
+
+Seems like it worked!
+
+=================
+November 10, 2013
+=================
+
+Cleaning up thumbnails and low-hanging duplicate fruit.

@@ -1,7 +1,9 @@
 #!/usr/bin/ruby
-# Check for duplicate files
+# Check for duplicate files.
+# This version will check for all file types including .files (dotfiles).
 
 require 'pathname'
+require 'digest'
 
 # Define Statics
 debug = (ARGV[1] == 'debug')
@@ -23,13 +25,16 @@ print "files.size after collecting files: ", files.size, "\n" if debug
 count = 0
 files.each{ |file|
 	if Pathname.new(file).directory? then next end
-	if Pathname.new(file).size > (1024 * 1024 * 20) then 
+	if Pathname.new(file).size > (1024 * 1024 * 100) then 
 		print "Refusing to calculate digest of large file: #{file} \n"
 		next
 	 end
 	begin
 		md5 = Digest::MD5.file(file).hexdigest
-	rescue
+	rescue Exception => e
+		print "Digest calculation failed:\n"
+		puts e.message
+		puts e.backtrace.inspect
 		next	
 	end
 
@@ -51,6 +56,7 @@ print "Duplicate Files: #{dupes.size}\n"
 
 outfile = "#{pwd}/duplicates.out"
 File.open(outfile,'w') { |output|
+	output.write("Duplicates detected in #{pwd}:\n")
 	dupes.each { |dupe|
 		output.write("#{dupe[0]} |::| #{dupe[1]}\n")
 	}

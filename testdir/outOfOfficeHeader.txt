@@ -1,0 +1,22 @@
+Received: from DEFRMDBG012.de.db.com (10.249.252.55) by USTLMDBG010.US.DB.COM
+ (10.249.250.36) with Microsoft SMTP Server (TLS) id 8.3.213.0; Tue, 21 Aug
+ 2012 12:29:20 -0500
+Received: from DEFRCDBG013.de.db.com ([169.254.2.113]) by
+ DEFRMDBG012.de.db.com ([10.249.252.55]) with mapi; Tue, 21 Aug 2012 19:29:18
+ +0200
+Content-Type: application/ms-tnef; name="winmail.dat"
+Content-Transfer-Encoding: binary
+From: Richard Lloyd <richard.lloyd@db.com>
+To: Jad Talbert <jad.talbert@db.com>
+Date: Tue, 21 Aug 2012 19:29:17 +0200
+Subject: Out of Office: Here is the email I was talking about [I]
+Thread-Topic: Here is the email I was talking about [I]
+Thread-Index: Ac1jlEM48y1dVkGTTwGyHMy86KUMlgAAYSDwAAQGHagAGOEpYAE3XtkgAAAY7jAAAS16YAAAHgDgAABjbiAAADs3MAAAJCBQAABhh+AAAD9BYAAA4uuQAAIP0oAAJMn2EAWMWKugAAAKG30=
+Message-ID: <A646EE229836004E9186E6FE86B2A8C70517E52F9E@DEFRCDBG013.de.db.com>
+Accept-Language: en-US, de-DE
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator: <A646EE229836004E9186E6FE86B2A8C70517E52F9E@DEFRCDBG013.de.db.com>
+MIME-Version: 1.0
+Return-Path: <>
