@@ -128,3 +128,12 @@ November 10, 2013
 =================
 
 Cleaning up thumbnails and low-hanging duplicate fruit.
+
+
+============
+July 8, 2014
+============
+A few updates: 
+ - Added a proper CLI to dupefinder using thor (http://whatisthor.com)
+ - Added a dedupe command to dupefinder (dupefinder.rb help dedupe)
+ - compressed testdir for easy re-testing after the testdir has been altered
